@@ -1,0 +1,186 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55c98c5aab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo"> 
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Connect</a></li>
+                <i class="fa-solid" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <div id="div1">
+                <p id="p1">In pursuit of dopamine™.</p><br
+                <p id="p2"><p>Back-End Software Developer</p></p>
+              </div>
+            <h1>My Name is <span>Suraj</span> Nagpal</h1>
+        </div>
+    </div>
+</div>
+<!-- ------------about------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/personal.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br>
+                <p>I am currently studying at the University of Exeter, with proficiency in Python and basic knowledge of Java, and I am also learning JavaScript. I am focused on developing a web application that integrates Solana smart contracts.</p><br>
+            
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('My Skills')">My Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>      
+                </div>
+                <div class="tab-contents active-tab" id="My Skills">
+                    <ul>
+                        <li><span><br>Programming<br></span><br>Python<br>Basic Java<br>Basic Web development<br>Understanding Of SQL</li><br>
+                        <li><span><br>Soft Skills<br></span><br>Photographer<br>Team Player<br>Strong Communication Skills<br>Time Management</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span><br>June 2024 - Present</span><br>Back-End Developer - Youni, UK</li><br>
+                        <li><span>October 2023 - Present</span><br>Academic Representative for Computer Science - University Of Exeter, UK </li><br>
+                        <li><span>July 2023 - August 2023</span><br>Business Developement Representative - Cadalys', USA</li><br>
+                        <li><span>December 2022 - Feburary 2023</span><br>Finance Manager & Organiser of Cinematography Event - Cedar College, Pakistan</li><br>
+                        <li><span>June 2019 - August 2019</span><br>Assistant Accountant - R.F Enterprises, Pakistan</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span><br>September 2023 - June 2026</span><br>BSc Computer Science at University Of Exeter</li><br>
+                        <li><span>August 2021 - August 2023</span><br>A-Level at Cedar College</li><br>
+                        <li><span>June 2019 - June 2021</span><br>O-Level at St. Michaels Convent School</li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1><br>
+        <div class="work-list">
+            <div class="work">
+                    <img src="images/Battleship.png">
+                    <div class="layer">
+                        <h3>Multiplayer battleship board game recreated to be played with AI or Friends</h3>
+                        <a href="https://github.com/surajnagpal/BattleShipbySKN"><i class= "fa-solid fa-link"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="work">
+                    <img src="images/Tour De France.png">
+                    <div class="layer">
+                        <h3>Back-End java program to trace race progression for Tour De France</h3>
+                        <a href="https://github.com/surajnagpal/website_introduction"><i class= "fa-solid fa-link"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="work">
+                    <img src="images/WebDev.png">
+                    <div class="layer">
+                        <h3>This website is my web design example.</h3>
+                        <a href="https://github.com/surajnagpal/TDF"><i class= "fa-solid fa-link"></i></a>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="#" class="btn">View More</a>
+    </div>
+</div>
+<!-- ------------contact------------ -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-phone"></i>+44 (0) 7795 946751</p>
+                <p><i class="fa-regular fa-paper-plane"></i>surajnagpal07@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/suraj-nagpal-0887aa276"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/surajnagpal"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Suraj Nagpal.pdf" download class="btn btn2">Download CV</a>
+            </div> 
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input  type="text" name="Name" placeholder="Your Name" required>
+                    <input  type="email" name="email" placeholder="Your Email" required>     
+                    <textarea  name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>          
+                </form>
+                <span id="msg"></span>
+            </div>   
+        </div>    
+    </div>   
+ </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu() {
+        sidemenu.style.right = '0';
+    }
+    
+    function closemenu() {
+        sidemenu.style.right = '-200px';
+    }
+
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxbU7X7jvu79-pBzI9JF6-2i1K2xozBCycbn7ueoTM3aer5zCAhaYT4CBR3sSDp6te0/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
